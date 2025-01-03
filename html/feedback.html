@@ -3,6 +3,7 @@
     <head> <!-- Meta tag, -->
         <meta charset="UTF-8">
         <title>Feedback</title> <!-- Displayed in tab bar -->
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav>
@@ -10,11 +11,22 @@
         </nav>
         <h1>Feedback Formular</h1>
         <form>
-        <input type="text" id="name" name="" placeholder="Name (Optional)">
+            <input type="text" id="name" name="" placeholder="Name (Optional)"><br>
+            <input type="text" id="email" name="" placeholder="Email (Optional, for follow-ups)">
 
-        <input type="text" id="email" name="" placeholder="Email (Optional, for follow-ups)">
-        <label><input type="radio"> Bug report</label>
-        <input type="text" id="comment" name="" placeholder="Feedback / Comments" required>
-        <button type="submit">Submit</button>
+            
+            <fieldset> <!-- Fieldset element groups related inputs & labels together in a web form -->
+                <legend>Welche Art von Feedback?</legend>
+                <label><input id="bug_report" type="radio" name="feedback_type" value="bug_report"> Bug report</label>
+                <label><input id="design_suggestion" type="radio" name="feedback_type" value="bug_report"> Design Suggestion</label>
+                <label><input id="general_feedback" type="radio" name="feedback_type" value="bug_report"> General Feedback</label>
+                <label><input id="feature_request" type="radio" name="feedback_type" value="bug_report"> Feature Request</label>
+            </fieldset>
+            
+            <input type="text" id="comment" name="" placeholder="Feedback / Comments" required>
+
+            <button type="submit">Submit</button>
+
+        <!-- Notiz: Füge auch eine "Erfolg!"-Nachricht hinzu! -->
     </body>
 </html>
