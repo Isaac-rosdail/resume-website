@@ -17,10 +17,14 @@
             
             <fieldset> <!-- Fieldset element groups related inputs & labels together in a web form -->
                 <legend>Welche Art von Feedback?</legend>
-                <label><input id="bug_report" type="radio" name="feedback_type" value="bug_report"> Bug report</label>
-                <label><input id="design_suggestion" type="radio" name="feedback_type" value="bug_report"> Design Suggestion</label>
-                <label><input id="general_feedback" type="radio" name="feedback_type" value="bug_report"> General Feedback</label>
-                <label><input id="feature_request" type="radio" name="feedback_type" value="bug_report"> Feature Request</label>
+                <input id="bug_report" type="radio" name="feedback_type" value="bug_report">
+                <label for="bug_report">Bug Report</label>
+                <input id="design_suggestion" type="radio" name="feedback_type" value="bug_report">
+                <label for="design_suggestion">Design Suggestion</label>
+                <input id="general_feedback" type="radio" name="feedback_type" value="bug_report">
+                <label for="general_feedback">General Feedback</label>
+                <input id="feature_request" type="radio" name="feedback_type" value="bug_report">
+                <label for="feature_request">Feature Request</label>
             </fieldset>
             
             <input type="text" id="comment" name="" placeholder="Feedback / Comments" required>
@@ -30,3 +34,6 @@
         <!-- Notiz: Füge auch eine "Erfolg!"-Nachricht hinzu! -->
     </body>
 </html>
+<footer>
+    <p>Copyright - Isaac Rosdail</p>
+</footer>
