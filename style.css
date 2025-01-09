@@ -1,21 +1,24 @@
-body{
+body {
     font-family: sans-serif;
     background-color: #0d0d0d;
     color: white;
+    background-image: url(bilder/ProfilePic_Close.jpg);
 }
-nav a{
+nav a {
     color: white;
     padding: 5px 5px;
     text-decoration: none;
     border: 2px solid transparent;
     transition: border-color 0.1s ease;
 }
-nav a:hover{
+nav a:hover {
     border: 2px solid white;
 }
-h1{
-    text-align: center;
-}
-table{
+table {
     border-style: solid;
+}
+/* id selector */
+#profilbild {
+    max-width: 300px;
+    max-height: 450px;
 }
